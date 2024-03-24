@@ -1,0 +1,129 @@
+body {
+	line-height: 1.75;
+}
+a {
+	color: inherit;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+nav ul, .popup ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.HLayout, .VLayout {
+	display: flex;
+}
+
+.HLayout > .pane {
+	background: black;
+	color: white;
+	border: 1px solid;
+	display: block;
+	overflow: auto;
+	resize: both;
+	margin: 5px;
+	width: 75vw;
+}
+
+.VLayout {
+	flex-direction: column;
+}
+
+.VLayout > .pane {
+	background: black;
+	border: 1px solid;
+	display: block;
+	overflow: auto;
+	resize: both;
+	margin: 5px;
+	height: 240px;
+	width: 420px;
+}
+
+h2 {
+	margin: 0;
+	padding: 0.5rem;
+	background: linear-gradient(#000, #999);
+	color: white;
+	font-size: 100%;
+}
+
+.active h2 {
+	background: linear-gradient(#00F, #99F);
+}
+
+.layer-container {
+	position: relative;
+	height: 600px;
+}
+
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.popup {
+	background: white;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 5px;
+	position: absolute;
+	padding: 1em;
+	width: 45vw;
+	height: 40vh;
+	resize: both;
+	overflow: auto;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.popup li {
+	display: inline-block;
+	width: 100%;
+}
+
+header {
+	background: white;
+	display: flex;
+	padding: 0.5ex;
+}
+
+fieldset {
+	font-size: small;
+	overflow: auto;
+}
+
+label {
+	display: block;
+}
+
+form > * {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+#modal-background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
